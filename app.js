@@ -6,7 +6,7 @@ console.log("Node Http Server Starting Serving...");
 var handler = function(request, response) {
   console.log("Received request from " + request.connection.remoteAddress);
   response.writeHead(200);
-  response.end("You've hit " + os.hostname() + " good one!" +"\n");
+  response.end("You've hit " + os.hostname() + " good job!" +"\n");
 };
 
 var www = http.createServer(handler);
